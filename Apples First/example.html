@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 5fr;
+    gap: 30px
+}
+.main {
+    grid-row: span 3;
+    background-color: aliceblue;
+}
+.str {
+    background-color: red;
+}
+</style>
+<div class="grid">
+    <div class="main">
+        1
+    </div>
+    <div class="str">
+        str1
+    </div>
+    <div class="str">
+        str2
+    </div>
+    <div class="str">
+        str3
+    </div>
+</div>
+</body>
+</html>
